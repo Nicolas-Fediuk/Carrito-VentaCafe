@@ -1,0 +1,46 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    display: inline-block;
+}
+
+button{
+    background-color: #99734e;
+    border: none;
+    color: white;
+    width: 20rem;
+    height: 4rem;
+}
+h2{
+    font-size: 5rem;
+    text-align: center;
+    padding:1rem 0 1rem 0;
+    color: white;
+    
+    span{
+        color: #99734e;
+    }
+}
+
+
+@import "_nav";
+
+@import "_header";
+
+@import "_sobreNosotros";
+
+@import "_main";

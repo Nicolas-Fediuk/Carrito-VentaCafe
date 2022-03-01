@@ -1,0 +1,189 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: black; }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto 0 auto; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+li {
+  display: inline-block; }
+
+button {
+  background-color: #99734e;
+  border: none;
+  color: white;
+  width: 20rem;
+  height: 4rem; }
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  color: white; }
+  h2 span {
+    color: #99734e; }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+  nav .contenedor-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    nav .contenedor-nav .nav-barra a {
+      font-size: 1.5rem;
+      padding-left: 2rem; }
+    nav .contenedor-nav .nav-iconos div {
+      color: white;
+      font-size: 2.5rem;
+      padding-left: 2rem;
+      cursor: pointer; }
+    nav .contenedor-nav .nav-iconos #nav-corazon {
+      display: none; }
+
+header {
+  color: white;
+  background-image: url("../img/home-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55rem; }
+  header div {
+    padding: 5rem 0 0 5rem;
+    max-width: 50%; }
+    header div h1 {
+      font-size: 5rem; }
+    header div p {
+      font-size: 2rem;
+      line-height: 3rem; }
+
+section {
+  color: white; }
+  section .contenedor-nosotros {
+    display: flex;
+    background-color: #222222; }
+    section .contenedor-nosotros .nosotros-imagen img {
+      height: 45rem;
+      width: 60rem; }
+    section .contenedor-nosotros .nosotros-texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem 0 2rem; }
+      section .contenedor-nosotros .nosotros-texto h3 {
+        font-size: 3rem;
+        margin-bottom: 1rem; }
+      section .contenedor-nosotros .nosotros-texto p {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        margin-bottom: 1rem; }
+
+main .main-tazaCafe {
+  display: grid;
+  grid-template-areas: "taza1 taza2 taza3" "taza4 taza5 taza6";
+  gap: 1.5rem; }
+  main .main-tazaCafe div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f5f5f5;
+    padding: 5rem 0 5rem 0;
+    transition: all 1s; }
+    main .main-tazaCafe div:hover {
+      background-color: white; }
+      main .main-tazaCafe div:hover button, main .main-tazaCafe div:hover h4, main .main-tazaCafe div:hover p {
+        color: black; }
+    main .main-tazaCafe div h4 {
+      font-size: 2rem;
+      margin: 1rem 0; }
+    main .main-tazaCafe div .taza-precio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: none;
+      height: 4rem;
+      padding: 0;
+      margin-bottom: 1rem; }
+      main .main-tazaCafe div .taza-precio p:first-of-type {
+        font-size: 3rem; }
+      main .main-tazaCafe div .taza-precio p:last-of-type {
+        text-decoration: line-through;
+        font-size: 2rem;
+        margin-left: 1rem; }
+  main .main-tazaCafe .taza-1 {
+    grid-area: taza1; }
+  main .main-tazaCafe .taza-2 {
+    grid-area: taza2; }
+  main .main-tazaCafe .taza-3 {
+    grid-area: taza3; }
+  main .main-tazaCafe .taza-4 {
+    grid-area: taza4; }
+  main .main-tazaCafe .taza-5 {
+    grid-area: taza5; }
+  main .main-tazaCafe .taza-6 {
+    grid-area: taza6; }
+
+.contenedor-cafe {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "cafeProducto1 cafeProducto2 cafeProducto3"; }
+  .contenedor-cafe .cafe-producto-1 {
+    grid-area: cafeProducto1; }
+  .contenedor-cafe .cafe-producto-2 {
+    grid-area: cafeProducto2; }
+  .contenedor-cafe .cafe-producto-3 {
+    grid-area: cafeProducto3; }
+  .contenedor-cafe .cafe-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem 2rem 3rem;
+    border: 1px solid #f5f5f5; }
+    .contenedor-cafe .cafe-producto .cafe-producto-iconos {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2rem; }
+      .contenedor-cafe .cafe-producto .cafe-producto-iconos a {
+        border: 1px solid #f5f5f5;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: all 0.2s; }
+        .contenedor-cafe .cafe-producto .cafe-producto-iconos a:hover {
+          background-color: #99734e; }
+    .contenedor-cafe .cafe-producto .cafe-producto-descripcion {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor-cafe .cafe-producto .cafe-producto-descripcion h4 {
+        font-size: 3rem;
+        margin: 2rem 0 1rem 0; }
+      .contenedor-cafe .cafe-producto .cafe-producto-descripcion i {
+        font-size: 2rem; }
+    .contenedor-cafe .cafe-producto .producto-precio {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 4rem;
+      padding-top: 1rem; }
+      .contenedor-cafe .cafe-producto .producto-precio p:first-of-type {
+        font-size: 3rem; }
+      .contenedor-cafe .cafe-producto .producto-precio p:last-of-type {
+        text-decoration: line-through;
+        font-size: 2rem;
+        margin-left: 1rem; }

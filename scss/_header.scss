@@ -1,0 +1,21 @@
+header{
+    color: white;
+    background-image: url("../img/home-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+
+    div{
+        padding: 5rem 0 0 5rem;
+        max-width: 50%;
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        
+    }
+}

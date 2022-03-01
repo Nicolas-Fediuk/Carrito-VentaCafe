@@ -1,0 +1,156 @@
+main{
+    .main-tazaCafe{
+        display: grid;
+        grid-template-areas: 
+        "taza1 taza2 taza3"
+        "taza4 taza5 taza6"
+        ;
+        gap: 1.5rem;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #f5f5f5;
+            padding: 5rem 0 5rem 0;
+            transition: all 1s;
+
+            &:hover{
+                background-color: white;
+                button,h4,p{
+                    color: black;
+                }
+            }
+
+            h4{
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+
+            .taza-precio{
+               
+                display: flex;
+                flex-direction:row;
+                justify-content: center;
+                border: none;
+                height: 4rem;
+                padding: 0;
+                margin-bottom: 1rem;
+
+                p{
+                    
+                    &:first-of-type{
+                        font-size: 3rem;
+                    }
+                    &:last-of-type{
+                        text-decoration: line-through;
+                        font-size: 2rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .taza-1{
+            grid-area: taza1;
+        }
+        .taza-2{
+            grid-area: taza2;
+        }
+        .taza-3{
+            grid-area: taza3;
+        }
+        .taza-4{
+            grid-area: taza4;
+        }
+        .taza-5{
+            grid-area: taza5;
+        }
+        .taza-6{
+            grid-area: taza6;
+        }
+    }
+}
+
+.contenedor-cafe{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "cafeProducto1 cafeProducto2 cafeProducto3"
+    ;
+
+    .cafe-producto-1{
+        grid-area: cafeProducto1;
+    }
+    .cafe-producto-2{
+        grid-area: cafeProducto2;
+    }
+    .cafe-producto-3{
+        grid-area: cafeProducto3;
+    }
+
+    .cafe-producto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 3rem 2rem 3rem;
+        border: 1px solid #f5f5f5;
+
+        .cafe-producto-iconos{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            
+            
+            a{
+                border: 1px solid #f5f5f5;
+                padding: 1rem;
+                font-size: 2rem;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: #99734e;
+                }
+            }
+
+            
+        }
+
+        .cafe-producto-descripcion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4{
+                font-size: 3rem;
+                margin: 2rem 0 1rem 0;
+            }
+
+            i{
+                font-size:2rem;
+            }
+            
+        }
+        .producto-precio{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+            height: 4rem;
+            padding-top: 1rem;
+                p{
+                    &:first-of-type{
+                        font-size: 3rem;
+                    }
+                    &:last-of-type{
+                        text-decoration: line-through;
+                        font-size: 2rem;
+                        margin-left: 1rem;
+                    }
+                }
+            
+        }
+    }
+    
+}

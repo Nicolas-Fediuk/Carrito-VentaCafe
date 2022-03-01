@@ -1,0 +1,32 @@
+section{
+    color: white;
+    
+    .contenedor-nosotros{
+        display: flex;
+        background-color: rgb(34, 34, 34);
+
+        .nosotros-imagen{
+            img{
+                height: 45rem;
+                width: 60rem;
+            }
+            
+        }
+        
+        .nosotros-texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 2rem 0 2rem;
+            h3{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.7rem;
+                line-height: 3rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
