@@ -15,6 +15,13 @@ nav{
             a{
                 font-size: 1.5rem;
                 padding-left: 2rem;
+                color: white;
+                padding-top: 1rem;
+
+                &:hover{
+                    color: #99734e;
+                    text-decoration: underline;
+                }
             }
         }
             
@@ -25,11 +32,161 @@ nav{
                 font-size: 2.5rem;
                 padding-left: 2rem;
                 cursor: pointer;
+
+                &:hover{
+                    color: #99734e;
+                    
+                }
             }
 
-            #nav-corazon{
-                display: none;
+            
+        }
+        .nav-action{
+            display: none;
+            position:absolute;
+            right: 0;
+            top: 100%;
+            background-color: white;
+            width: 40%;
+            height: 90vh;
+       
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                height: 90vh;
+                
+    
+                li{
+                    padding-top: 2rem;
+    
+                    a{
+                        color: black;
+                        font-size: 2rem;
+                        transition: all 1s;
+                        
+                        &:hover{
+                            color: #99734e;
+                            text-decoration: underline;
+                        }
+                    }
+                    
+                }
             }
+        }
+
+        .carrito{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: 1;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            min-height: 40rem;
+            min-width: 30rem;
+
+            table{
+                margin: 0;
+                width: 100%;
+                thead{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    tr{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-bottom: 1rem;
+                        border-bottom: 1px solid gray;
+
+                        th{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                tbody{
+                   
+                    width: 100%;
+
+                    tr{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 2rem 0;
+                        align-items: center;
+                        
+
+                        td{
+                            font-size: 1.2rem;
+                            &:nth-child(2){
+                                width: 6.2rem;
+                            }
+                            
+                            
+                            img{
+                                width: 5.5rem;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+
+            div{
+                width: 100%;
+                margin-top: 2rem;
+                border: 1px solid gray;
+                text-align: center;
+                padding: 1.2rem 0;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: #9b8269;
+                }
+                #vaciar-carrito{
+                    color: black;
+                    font-size: 1.2rem;
+                }
+            }
+
+           
+        }
+    }
+}
+
+@media screen and (min-width:821px) {
+    
+    .contenedor-nav{
+        .nav-iconos{
+            #nav-corazon{
+                display:none;
+            }
+        }
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:820px) {
+    .nav-barra{
+        display: none;
+    }
+
+    .nav-iconos{
+        display: flex;
+        #nav-corazon{
+            display:block;
+        }
+    }
+}
+
+@media screen and (max-width:436px) {
+    .nav-action{
+        ul{
+            padding-left: 1rem;
         }
     }
 }

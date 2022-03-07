@@ -16,37 +16,71 @@
             <div class="nav-logo">
                 <a href="index.html"><img src="img/logo.png" ></a> 
             </div>
-            <div class="nav-barra">
+            <div id="navBar" class="nav-barra">
 
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Comentarios</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
 
             </div>
             <div class="nav-iconos">
                 <div class="fas fa-search"></div>
-                <div class="fas fa-shopping-cart"></div>
+                <div class="fas fa-shopping-cart" id="carrito"></div>
                 <div class="fas fa-heart"></div>
                 <div class="fas fa-bars" id="nav-corazon"></div>
             </div>
+
+            <div class="nav-action">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="carrito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMAGEN</th>
+                            <th>NOMBRE</th>
+                            <th>PRECIO</th>
+                            <th>CANTIDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div>
+                    <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
+                </div>
+                
+            </div>
         </div>
     </nav>
-
+    
     <header>
         <div>
             <h1>CAFÉ FRESCO POR LA MAÑANA</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sint porro similique et harum deleniti, quos reiciendis? In expedita voluptate enim molestias asperiores eligendi ea repellat nesciunt, dignissimos iste illum.</p>
-            <button>Consigue el tuyo ahora</button>
+            <input class="button" type="submit" value="Consigue el tuyo ahora">
         </div>
-    </header>
 
-    <section class="container">
+    </header>
+    <div ></div>
+
+    
+
+    <section class="container" id="nosotros">
         <h2><span>SOBRE </span>NOSOTROS</h2>
         <div class="contenedor-nosotros">
             <div class="nosotros-imagen">
@@ -55,15 +89,15 @@
             <div class="nosotros-texto">
                 <h3>¿Qué hace que nuestro café sea especial?</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere excepturi ex odio dolorem delectus, nihil harum adipisci provident optio quod repellat. Dicta, reiciendis soluta consequatur enim voluptates vitae explicabo qui.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad placeat explicabo at commodi rem ratione eaque cupiditate consequatur aliquam recusandae necessitatibus, deleniti repellat mollitia ipsum in ea quasi. Ipsam!</p>
-                <button>Aprende mas</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <input class="button" type="submit" value="Aprende mas">
             </div>
         </div>
     </section>
 
-    <main>
+    <main id="menu">
         <h2>NUESTRO <span>MENU</span></h2>
-        <section class="main-tazaCafe container">
+        <section class="main-tazaCafe container" id="agrega-taza-carrito">
 
             
             <div class="taza-1">
@@ -73,7 +107,7 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="1" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
             <div class="taza-2">
@@ -83,7 +117,7 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="2" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
             <div class="taza-3">
@@ -93,7 +127,7 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="3" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
             <div class="taza-4">
@@ -103,7 +137,7 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="4" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
             <div class="taza-5">
@@ -113,7 +147,7 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="5" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
             <div class="taza-6">
@@ -123,18 +157,18 @@
                     <p>$15.88</p>
                     <p>$20.99</p>
                 </div>
-                <button>Agregar a la carta</button>
+                <input data-id="6" class="button Acarrito" type="submit" value="Agregar a la carta">
             </div>
     
         </section>
 
-        <section class="container">
+        <section class="container" id="productos">
             <h2>Nuestros <span>productos</span></h2>
-            <div class="contenedor-cafe">
+            <div class="contenedor-cafe" id="agregar-cafe-carrito">
 
                 <div class="cafe-producto-1 cafe-producto">
                     <div class="cafe-producto-iconos">
-                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a data-id="6" href="#" class="fas fa-shopping-cart Acarrito"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
@@ -156,154 +190,203 @@
                 </div>
 
                 
-                    <div class="cafe-producto-2 cafe-producto">
-                        <div class="cafe-producto-iconos">
-                            <a href="#" class="fas fa-shopping-cart"></a>
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="fas fa-eye"></a>
-                        </div>
-                        <div class="cafe-producto-descripcion">
-                            <img src="img/product-2.png" alt="">
-                            <h4>Cafe fresco</h4>
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <div class="producto-precio">
-                            <p>$15.99</p>
-                            <p>$20.99</p>
+                <div class="cafe-producto-2 cafe-producto">
+                    <div class="cafe-producto-iconos">
+                        <a data-id="7" href="#" class="fas fa-shopping-cart Acarrito"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="cafe-producto-descripcion">
+                        <img src="img/product-2.png" alt="">
+                        <h4>Cafe fresco</h4>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-
+                    <div class="producto-precio">
+                        <p>$15.99</p>
+                        <p>$20.99</p>
+                    </div>
+                </div>
                     
-                        <div class="cafe-producto-3 cafe-producto">
-                            <div class="cafe-producto-iconos">
-                                <a href="#" class="fas fa-shopping-cart"></a>
-                                <a href="#" class="fas fa-heart"></a>
-                                <a href="#" class="fas fa-eye"></a>
-                            </div>
-                            <div class="cafe-producto-descripcion">
-                                <img src="img/product-3.png" alt="">
-                                <h4>Cafe fresco</h4>
-                                <div>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                            <div class="producto-precio">
-                                <p>$15.99</p>
-                                <p>$20.99</p>
-                            </div>
+                <div class="cafe-producto-3 cafe-producto">
+                    <div class="cafe-producto-iconos">
+                        <a data-id="8" href="#" class="fas fa-shopping-cart Acarrito"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="cafe-producto-descripcion">
+                        <img src="img/product-3.png" alt="">
+                        <h4>Cafe fresco</h4>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
+                    </div>
+                    <div class="producto-precio">
+                        <p>$15.99</p>
+                        <p>$20.99</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <article>
-        <h2>OPINIÓN DEL CLIENTE</h2>
-        <div>
-            <div>
-                <img src="" alt="">
+    <article class="container" id="comentarios">
+        <h2>OPINIÓN <span>DEL CLIENTE</span></h2>
+        <div class="opinion-contenedor">
+            <div class="opinion-card comentario-1">
+                <img src="img/quote-img.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam optio adipisci voluptatibus quos. Tempore beatae et, sit quisquam est at quos distinctio non exercitationem architecto eligendi impedit, facilis perferendis.</p>
-                <img src="" alt="">
+                <img class="opinion-img-cliente" src="img/pic-1.png" alt="">
                 <p>Nicolas Fediuk</p>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="opinion-card comentario-2">
+                <img src="img/quote-img.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam optio adipisci voluptatibus quos. Tempore beatae et, sit quisquam est at quos distinctio non exercitationem architecto eligendi impedit, facilis perferendis.</p>
-                <img src="" alt="">
+                <img class="opinion-img-cliente" src="img/pic-2.png" alt="">
                 <p>Nicolas Fediuk</p>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="opinion-card comentario-3">
+                <img src="img/quote-img.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam optio adipisci voluptatibus quos. Tempore beatae et, sit quisquam est at quos distinctio non exercitationem architecto eligendi impedit, facilis perferendis.</p>
-                <img src="" alt="">
+                <img class="opinion-img-cliente" src="img/pic-3.png" alt="">
                 <p>Nicolas Fediuk</p>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
         </div>
     </article>
 
-    <section>
-        <h2>CONTÁCTENOS</h2>
-        <div>
-            <div>
-                <img src="" alt="">
+    <section class="container" id="contacto">
+        <h2><span>CONTÁCTENOS</span></h2>
+        <div class="contenedor-contacto">
+            <div class="contacto1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53116.521556643005!2d-59.683462840118345!3d-33.68869308025829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ed0eb1a55f%3A0xe5f2bb57c8ee993a!2sSan%20Pedro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646169467469!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div>
-                <p>PONERSE EN CONTACTO</p>
+            <div class="contacto2">
+                <h4>PONERSE EN CONTACTO</h4>
                 <form action="">
                     <div>
-                        <input type="text" placeholder="Nombre">
+                        <input class="input" type="text" placeholder="Nombre">
                     </div>
                     <div>
-                        <input type="email" placeholder="Email">
+                        <input class="input" type="email" placeholder="Email">
                     </div>
                     <div>
-                        <input type="number" placeholder="Numero">
+                        <input class="input" type="number" placeholder="Numero">
+                    </div>
+                    <div>
+                        <input class="button" type="submit">
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <article>
-        <h2>NUESTRO BLOG</h2>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p>Café Sabroso Y Refrescante</p>
-                <p>Por Admin / 21 de mayo de 2021</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.</p>
-                <button>leer más</button>
+    <article class="container" id="blog">
+
+        <h2>NUESTRO <span>BLOG</span></h2>
+
+        <div class="contenedor-blog">
+
+            <div class="blog-card blog-1">
+                <div class="blog-contenedor-img">
+                    <img src="img/blog-1.jpeg" alt="">
+                </div>
+                <div class="contener-texto-blog">
+                    <h4>Café Sabroso Y Refrescante</h4>
+                    <h5>Por Admin / 21 de mayo de 2021</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.</p>
+                    <input class="button" type="submit" value="Ver mas">
+                </div>
             </div>
+
+            <div class="blog-card blog-2">
+                <div class="blog-contenedor-img">
+                    <img src="img/blog-2.jpeg" alt="">
+                </div>
+                <div class="contener-texto-blog">
+                    <h4>Café Sabroso Y Refrescante</h4>
+                    <h5>Por Admin / 21 de mayo de 2021</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.</p>
+                    <input class="button" type="submit" value="Ver mas">
+                </div>
+            </div>
+
+            <div class="blog-card blog-3">
+                <div class="blog-contenedor-img">
+                    <img src="img/blog-3.jpeg" alt="">
+                </div>
+
+                <div class="contener-texto-blog">
+                    <h4>Café Sabroso Y Refrescante</h4>
+                    <h5>Por Admin / 21 de mayo de 2021</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, harum.</p>
+                    <input class="button" type="submit" value="Ver mas">
+                </div>
+            </div>
+
         </div>
+
     </article>
 
-    <footer>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+    <footer class="container">
+        <div class="footer-contenedor-redes">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
         </div>
-        <div>
-            <p>Creado por Nicolas Fediuk | &copy todos los derechos reservados</p>
+        <div class="footer-contenedor-nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-derecho">
+            <p>Creado por <span> Nicolas Fediuk</span> | &copyCopyright todos los derechos reservados</p>
         </div>
     </footer>
 
     
 
-    
+    <script src="js/main.js"></script>
 </body>
 </html>

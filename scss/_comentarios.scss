@@ -1,0 +1,49 @@
+.opinion-contenedor{
+    display: grid;
+    grid-template-areas: 
+    "comentario1 comentario2 comentario3"
+    ;
+    gap: 1.5rem;
+    .opinion-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 3rem 2rem 3rem;
+        border: 1px solid #f5f5f5;
+        text-align: center;
+
+        .opinion-img-cliente{
+            width: 7rem;
+            border-radius: 50%;
+        }
+
+        p{
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        i{
+            font-size: 2rem;
+        }
+    }
+
+    .comentario-1{
+        grid-area: comentario1;
+    }
+    .comentario-2{
+        grid-area: comentario2;
+    }
+    .comentario-3{
+        grid-area: comentario3;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .opinion-contenedor{
+        display: grid;
+        grid-template-areas: 
+        "comentario1"
+         "comentario2"
+          "comentario3"
+        ;
+    }
+}

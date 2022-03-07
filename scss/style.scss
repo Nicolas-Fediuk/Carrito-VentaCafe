@@ -4,6 +4,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: black;
+    scroll-behavior: smooth;
 }
 .container{
     max-width: 90%;
@@ -12,18 +13,25 @@ html{
 
 a{
     text-decoration: none;
-    color: white;
+    color:white;
 }
 li{
     display: inline-block;
 }
 
-button{
+.button{
     background-color: #99734e;
     border: none;
     color: white;
     width: 20rem;
-    height: 4rem;
+    height: 3.5rem;
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover{
+        width: 23rem;
+        letter-spacing: 0.2rem;
+    }
 }
 h2{
     font-size: 5rem;
@@ -35,6 +43,24 @@ h2{
         color: #99734e;
     }
 }
+p{
+    color:white;
+    margin: 0;
+}
+i{
+    color: yellow;
+}
+h3{
+    margin: 0;
+}
+.borrarEnCarrito{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
 
 @import "_nav";
@@ -44,3 +70,11 @@ h2{
 @import "_sobreNosotros";
 
 @import "_main";
+
+@import "_comentarios";
+
+@import "_contacto";
+
+@import "_blog";
+
+@import "_footer";

@@ -3,12 +3,12 @@ section{
     
     .contenedor-nosotros{
         display: flex;
-        background-color: rgb(34, 34, 34);
 
         .nosotros-imagen{
             img{
                 height: 45rem;
                 width: 60rem;
+                object-fit: cover;
             }
             
         }
@@ -18,15 +18,46 @@ section{
             flex-direction: column;
             justify-content: center;
             padding: 0 2rem 0 2rem;
+            
             h3{
                 font-size: 3rem;
-                margin-bottom: 1rem;
+                padding-bottom: 2rem;
             }
             p{
                 font-size: 1.7rem;
                 line-height: 3rem;
-                margin-bottom: 1rem;
+                padding-bottom: 2rem;
             }
         }
     }
+}
+
+@media screen and (max-width:1036px) {
+    section{
+       
+        .contenedor-nosotros{
+            flex-direction: column;
+            align-items: center;
+
+            .nosotros-imagen{
+                width: 100%;
+                img{
+                    height: 45rem;
+                    width: 100%;
+                }
+                
+            }
+            
+            input{
+                margin-bottom: 2rem;
+            }
+
+            .nosotros-texto{
+                padding-top: 2rem;
+            }
+        }
+
+        
+    }
+    
 }

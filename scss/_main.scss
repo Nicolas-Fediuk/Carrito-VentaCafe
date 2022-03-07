@@ -17,7 +17,7 @@ main{
 
             &:hover{
                 background-color: white;
-                button,h4,p{
+                input,h4,p{
                     color: black;
                 }
             }
@@ -72,10 +72,38 @@ main{
     }
 }
 
+@media screen and (max-width:769px) {
+    main{
+        .main-tazaCafe{
+            display: grid;
+            grid-template-areas: 
+            "taza1 taza2 "
+            "taza3 taza4 "
+            "taza5 taza6"
+            ;
+        }
+    }
+}
+
+@media screen and (max-width:481px) {
+    main{
+        .main-tazaCafe{
+            display: grid;
+            grid-template-areas: 
+            "taza1"
+            "taza2"
+            "taza3 "
+            " taza4"
+            "taza5 "
+            "taza6"
+            ;
+        }
+    }
+}
+
 .contenedor-cafe{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
         "cafeProducto1 cafeProducto2 cafeProducto3"
     ;
@@ -100,7 +128,7 @@ main{
         .cafe-producto-iconos{
             width: 50%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-bottom: 2rem;
             
             
@@ -109,6 +137,10 @@ main{
                 padding: 1rem;
                 font-size: 2rem;
                 transition: all 0.2s;
+                color:white;
+                &:nth-child(2),&:last-child{
+                    margin-left: 1rem;
+                }
                 &:hover{
                     background-color: #99734e;
                 }
@@ -154,3 +186,25 @@ main{
     }
     
 }
+
+@media screen and (max-width:769px) {
+    .contenedor-cafe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-areas: 
+            "cafeProducto1"
+            "cafeProducto2"
+            "cafeProducto3"
+        ;
+    
+
+        .cafe-producto{
+            padding: 2rem 0 2rem 0;
+            width: 70%;
+            margin-bottom: 1.5rem;
+            
+        }
+    }
+}
+
