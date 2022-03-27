@@ -30,10 +30,10 @@
 
             </div>
             <div class="nav-iconos">
-                <div class="fas fa-search"></div>
+                <div class="fas fa-search" id="buscador"></div>
                 <div class="fas fa-shopping-cart" id="carrito"></div>
-                <div class="fas fa-heart"></div>
-                <div class="fas fa-bars" id="nav-corazon"></div>
+                <div class="fas fa-heart" id="Afavorito"></div>
+                <div class="fas fa-bars" id="nav-bar"></div>
             </div>
 
             <div class="nav-action">
@@ -63,7 +63,26 @@
                 <div>
                     <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
                 </div>
-                
+            </div>
+
+            <div class="favorito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMAGEN</th>
+                            <th>NOMBRE</th>
+                            <th>PRECIO</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div>
+                    <a href="#" id="vaciar-favorito">VACIAR FAVORITO</a>
+                </div>
+            </div>
+
+            <div class="buscadorHtml">
+                <input id="buscadorInput" type="text" placeholder="Buscar">
             </div>
         </div>
     </nav>
@@ -102,7 +121,7 @@
             
             <div class="taza-1">
                 <img src="img/menu-1.png" alt="">
-                <h4>Sabrosa Y Saludable</h4>
+                <h4 class="productoName">Sabrosa Y Saludable</h4>
                 <div class="taza-precio">
                     <p>$15.88</p>
                     <p>$20.99</p>
@@ -112,7 +131,7 @@
     
             <div class="taza-2">
                 <img src="img/menu-2.png" alt="">
-                <h4>Sabrosa Y Saludable</h4>
+                <h4 class="productoName">Sabrosa Y Rica</h4>
                 <div class="taza-precio">
                     <p>$15.88</p>
                     <p>$20.99</p>
@@ -169,7 +188,7 @@
                 <div class="cafe-producto-1 cafe-producto">
                     <div class="cafe-producto-iconos">
                         <a data-id="6" href="#" class="fas fa-shopping-cart Acarrito"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-heart AfavoritoProducto" id="btnFavorito"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="cafe-producto-descripcion">
@@ -193,7 +212,7 @@
                 <div class="cafe-producto-2 cafe-producto">
                     <div class="cafe-producto-iconos">
                         <a data-id="7" href="#" class="fas fa-shopping-cart Acarrito"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-heart" id="btnFavorito"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="cafe-producto-descripcion">
@@ -216,7 +235,7 @@
                 <div class="cafe-producto-3 cafe-producto">
                     <div class="cafe-producto-iconos">
                         <a data-id="8" href="#" class="fas fa-shopping-cart Acarrito"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-heart" id="btnFavorito"></a>
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="cafe-producto-descripcion">

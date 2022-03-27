@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+
 html{
     padding: 0;
     margin: 0;
@@ -14,6 +18,8 @@ html{
 a{
     text-decoration: none;
     color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 li{
     display: inline-block;
@@ -33,6 +39,10 @@ li{
         letter-spacing: 0.2rem;
     }
 }
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 h2{
     font-size: 5rem;
     text-align: center;
@@ -46,6 +56,8 @@ h2{
 p{
     color:white;
     margin: 0;
+    font-family: 'Hubballi', cursive;
+    font-weight: 500;
 }
 i{
     color: yellow;
@@ -54,6 +66,14 @@ h3{
     margin: 0;
 }
 .borrarEnCarrito{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.borrarFavorito{
     background-color: red;
     border-radius: 50%;
     padding: 0.5rem 1rem;

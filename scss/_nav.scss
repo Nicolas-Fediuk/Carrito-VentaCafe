@@ -153,6 +153,106 @@ nav{
 
            
         }
+
+        .favorito{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            z-index: 1;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            min-height: 40rem;
+            min-width: 30rem;
+
+            table{
+                margin: 0;
+                width: 100%;
+                thead{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    tr{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-bottom: 1rem;
+                        border-bottom: 1px solid gray;
+
+                        th{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                tbody{
+                   
+                    width: 100%;
+
+                    tr{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 2rem 0;
+                        align-items: center;
+                        
+
+                        td{
+                            font-size: 1.2rem;
+                            &:nth-child(2){
+                                width: 6.2rem;
+                            }
+                            
+                            
+                            img{
+                                width: 5.5rem;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+
+            div{
+                width: 100%;
+                margin-top: 2rem;
+                border: 1px solid gray;
+                text-align: center;
+                padding: 1.2rem 0;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: #9b8269;
+                }
+                #vaciar-favorito{
+                    color: black;
+                    font-size: 1.2rem;
+                }
+            }
+
+           
+        }
+
+        .buscadorHtml{
+            position: absolute;
+            top:120%; right: 7%;
+            background: #fff;
+            width: 50%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            display: none;
+
+            input{
+                height: 100%;
+                width: 100%;
+                font-size: 1.6rem;
+                padding:1rem;
+                text-transform: none;
+            }
+            
+        }
     }
 }
 
@@ -160,10 +260,12 @@ nav{
     
     .contenedor-nav{
         .nav-iconos{
-            #nav-corazon{
+            #nav-bar{
                 display:none;
             }
         }
+
+        
         
     }
     
@@ -177,7 +279,7 @@ nav{
 
     .nav-iconos{
         display: flex;
-        #nav-corazon{
+        #nav-bar{
             display:block;
         }
     }
