@@ -68,7 +68,7 @@ En esta sección se visualizan las tazas de café a la venta, al hacer click al 
 
 ##### Vista mobile
 
-![](https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/278580503_102931695739690_1928147377129144655_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=8BGpCvKEUQ8AX-H9HsM&_nc_ht=scontent-eze1-1.xx&oh=00_AT8OltkuMAzXcTTzfSeEeQOslCw0PKTtIp3Qq5u6FdcBLQ&oe=6264D3B8)
+![](https://www.facebook.com/photo/?fbid=102934632406063&set=a.102868939079299&__cft__[0]=AZWQM_IN-Zgy_BTue925g6I0t2tlmn4orAtf_GhJ0DBFwBhnu1eO0IrBuxcBqRyC0UVBsG4LTwc-NhANN_J1SU2I0E6MIe6SgsORNExMvsbsrILZ_Uq9996Xh8DpoH-FAhrjw2Lci_1FO0xOEOkVecz8u8y1EKLmkJ6ZDTMKJXKgZA&__tn__=EH-R)
 
 ### Nuestros productos
 
